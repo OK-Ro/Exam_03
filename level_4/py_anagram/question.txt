@@ -1,0 +1,61 @@
+Exercise: Anagram
+
+Level: 4
+
+Write a function that checks if two strings are anagrams.
+
+Two strings are anagrams if they contain exactly the same letters
+with the same quantity.
+
+Rules:
+- Ignore case.
+- Ignore spaces.
+
+
+Function signature:
+
+def anagram(s1: str, s2: str) -> bool:
+
+
+Examples:
+
+Input:
+anagram("listen", "silent")
+
+Output:
+True
+
+
+Input:
+anagram("Triangle", "Integral")
+
+Output:
+True
+
+
+Input:
+anagram("Dormitory", "Dirty Room")
+
+Output:
+True
+
+
+Input:
+anagram("hello", "world")
+
+Output:
+False
+
+
+Input:
+anagram("", "")
+
+Output:
+True
+
+
+Input:
+anagram("abc", "abcc")
+
+Output:
+False
