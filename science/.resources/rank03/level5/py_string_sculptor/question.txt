@@ -1,0 +1,57 @@
+Exercise: String Sculptor
+
+Level: 5
+
+Write a function that transforms a string by alternating the case of
+alphabetic characters only.
+
+Rules:
+- Non-alphabetic characters remain unchanged.
+- Non-alphabetic characters are NOT counted in the alternation index.
+- The first alphabetic character should be lowercase.
+- The second alphabetic character should be uppercase.
+- Continue alternating.
+- Spaces reset the alternation (the next alphabetic character after a space
+  should start again as lowercase).
+
+
+Function signature:
+
+def string_sculptor(text: str) -> str:
+
+
+Examples:
+
+Input:
+string_sculptor("hello")
+
+Output:
+"hElLo"
+
+
+Input:
+string_sculptor("Hello World")
+
+Output:
+"hElLo wOrLd"
+
+
+Input:
+string_sculptor("abc123def")
+
+Output:
+"aBc123DeF"
+
+
+Input:
+string_sculptor("Python3.9!")
+
+Output:
+"pYtHoN3.9!"
+
+
+Input:
+string_sculptor("")
+
+Output:
+""

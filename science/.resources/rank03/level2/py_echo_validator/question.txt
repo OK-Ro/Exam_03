@@ -1,0 +1,69 @@
+Exercise: Echo Validator
+
+Level: 2
+
+Write a function that checks if a string is a palindrome.
+
+Rules:
+- Ignore spaces.
+- Ignore letter casing (uppercase/lowercase).
+- Only consider alphabetic characters for the comparison.
+
+A palindrome is a word or sentence that reads the same forward and backward
+after applying the rules above.
+
+
+Function signature:
+
+def echo_validator(text: str) -> bool:
+
+
+Examples:
+
+Input:
+echo_validator("racecar")
+
+Output:
+True
+
+
+Input:
+echo_validator("A man a plan a canal Panama")
+
+Output:
+True
+
+
+Input:
+echo_validator("race a car")
+
+Output:
+False
+
+
+Input:
+echo_validator("Was it a car or a cat I saw")
+
+Output:
+True
+
+
+Input:
+echo_validator("hello")
+
+Output:
+False
+
+
+Input:
+echo_validator("Madam Im Adam")
+
+Output:
+True
+
+
+Input:
+echo_validator("")
+
+Output:
+False
