@@ -1,0 +1,69 @@
+Exercise: Cryptic Sorter
+
+Level: 1
+
+Write a function that sorts a list of strings according to multiple criteria.
+
+Sorting rules:
+
+1. Primary sort:
+   Sort by string length (shortest first).
+
+2. Secondary sort:
+   For strings with the same length:
+   Sort by ASCII order, except letters are compared case-insensitively.
+
+3. Tertiary sort:
+   For strings with the same length and same lexical order:
+   Sort by number of vowels (ascending).
+
+4. Equal strings:
+   Equal strings must keep the same order as they appeared in the input list.
+
+Forbidden functions:
+
+Do not use:
+- sorted()
+- list.sort()
+
+
+Function signature:
+
+def cryptic_sorter(strings: list[str]) -> list[str]:
+
+
+Examples:
+
+Input:
+cryptic_sorter(["apple","cat","banana","dog","elephant"])
+
+Output:
+["cat","dog","apple","banana","elephant"]
+
+
+Input:
+cryptic_sorter(["aaa","bbb","AAA","BBB"])
+
+Output:
+["aaa", "AAA", "bbb", "BBB"]
+
+
+Input:
+cryptic_sorter(["hello","world","hi","test"])
+
+Output:
+["hi","test","hello","world"]
+
+
+Input:
+cryptic_sorter([])
+
+Output:
+[]
+
+
+Input:
+cryptic_sorter([""])
+
+Output:
+[""]
